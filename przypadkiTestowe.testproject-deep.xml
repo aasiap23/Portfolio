@@ -1,0 +1,1221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="38990" name="Website design" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="38994" name="Widok aplikacji zawiera poprawne elementy. ">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<fullexternalid><![CDATA[JP-3-1]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Sprawdzenie, czy po uruchomieniu aplikacji zawiera ona wszystkie domyślne elementy wskazane jako Widok aplikacji.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik ma dostęp do Internetu.</p>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik wpisuje adres aplikacji: http://kanbanboard.pl/</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Użytkownikowi wyświetla się oczekiwana strona z aplikacją.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Aplikacja wyświetla się w postacji tablicy korkowej.</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Aplikacja zawiera 3 domyślne kolumny: To do, Doing, Done.</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Aplikacja zawiera jedno zadanie (&ldquo;new task&rdquo;), w kolumnie do zrobienia ( &ldquo;to do&rdquo;).</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Aplikacja zawiera przycisk dodania nowej kolumny (&ldquo;add new column&rdquo;).</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Aplikacja zawiera przyciski dodawania nowego zadania (&ldquo;add task&rdquo;) w każdej kolumnie.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Aplikacja posiada poprawny widok.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="39582" name="Workflow aplikacji." >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="39603" name="Działania na kolumnach." >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="39585" name="Dodanie nowej kolumny.">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<fullexternalid><![CDATA[JP-3-2]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Sprawdzenie możliwości dodania kolumny.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik klika w dostępną opcję &ldquo;add new column&rdquo;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Rozpoczyna się proces dodawania nowej kolumny poprzez wyświetlenie komunikatu o treści &quot;Wpisz nazwę kolumny&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Użytkownik wpisuje nazwę nowej kolumny i klika &quot;ok&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Dodaje się nowa kolumna z wpisaną wcześniej nazwą. Kolumna jest widoczna jako ostatnia po prawej stronie od wcześniej dodanej kolumny.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="39589" name="Anulowanie dodawnia nowej kolumny.">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<fullexternalid><![CDATA[JP-3-3]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Sprawdzenie możliwości anulowania dodawania nowej kolumny.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik klika w dostępną opcję &ldquo;add new column&rdquo;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Rozpoczyna się proces dodawania nowej kolumny poprzez wyświetlenie komunikatu o treści &quot;Wpisz nazwę kolumny&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Użytkownik nie wpisuje nazwy nowej kolumny i klika przycisk &quot;anuluj&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Komunikat informujący o rozpoczęciu procesu dodawania nowej kolumny znika autmatycznie i nowa kolumna się nie dodaje.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="39665" name="Dodanie nowej kolumny bez nazwy.">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[12]]></externalid>
+	<fullexternalid><![CDATA[JP-3-12]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Sprawdzenie możliwości dodania nowej kolumny bez wpisania jej nazwy.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik klika w dostępną opcję &ldquo;add new column&rdquo;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Rozpoczyna się proces dodawania nowej kolumny poprzez wyświetlenie komunikatu o treści &quot;Wpisz nazwę kolumny&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Użytkownik nie wpisuje nazwy nowej kolumny i klika &quot;ok&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Dodaje się nowa kolumna z wpisaną automatycznie nazwą &quot;Kolumna&quot;. Kolumna jest widoczna jako ostatnia po prawej stronie od wcześniejszej dodanej kolumny.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="39732" name="Zmiana miejsce między kolumnami. ">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[15]]></externalid>
+	<fullexternalid><![CDATA[JP-3-15]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Sprawdzenie poprawności działania funkcjonalności &quot;drag&amp;drop&quot; w zakresie zamiany miejsc między kolumnami.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik najeżdzą myszą na wybraną losowo kolumnę, po czym klika na nią i przeciąga w miejsce innej kolumny.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&quot;Podniesiona&quot; kolumna została prawidłowo przeniesiona w wybrane miejsce. Pozostałe kolumny przesuwają się odpowiednio się dopasowując.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="39779" name="Weryfikacja ograniczeń w dodawaniu kolumn.">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[16]]></externalid>
+	<fullexternalid><![CDATA[JP-3-16]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Sprawdzenie czy w aplikacji został ustanowiony limit na dodawnie kolumn.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik poprzez przycisk &quot;add new column&quot; oraz zatwiedzenie &quot;ok&quot; dodaje 37 kolumn.&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Kolumny zostały poprawnie dodane. Kolumny zostają umieszczone kolejno po prawej stronie.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="39800" name="Weryfikacja ograniczeń w ilości dodanych znaków w nazwie kolumny.">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[18]]></externalid>
+	<fullexternalid><![CDATA[JP-3-18]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Sprawdzenie czy podczas dodawania nazwy kolumny, jest ustawiony limit na ilość znak&oacute;w .</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik dodaje kolumne poprzez przycisk &quot;add new kolumn&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wyświetlony zostaje komunikat o treści: &quot;wpisz nazwę kolumny&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Użytkownik wpisuje w nazwie ciąg znak&oacute;w &quot;lorem ipsum&quot; i klika &quot;ok&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Nie wystąpił limit znak&oacute;w w wprowadzonym nazwie. Kolumna dodała sie poprawnie.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="40041" name="Usuwanie kolumn - negacja.">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[28]]></externalid>
+	<fullexternalid><![CDATA[JP-3-28]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Sprawdzenie czy istnieje możliwość usunięcia kolumny.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+
+<p>Aplikacja posiada kilka dodanych kolumn.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik najeżdża wskaźnikiem myszy na kolumnę &quot;done&quot; i pr&oacute;buje ją usunąć poprzez kliknięcie myszą na przycisk &quot;x&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wyświetla się komunikat o treści &quot;czy na pewno chcesz usunąć wybraną kolumnę?&quot; wraz z&nbsp; przyciskami &quot;tak&quot; i &quot;nie&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Użytkownik potwierdza chęć usunięcia kolumny poprzez wybranie przycisku &quot;tak&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Kolumna zostaje usunięta.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="39825" name="Wprowadzenie znaków specjalnych w nazwie kolumn.">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[20]]></externalid>
+	<fullexternalid><![CDATA[JP-3-20]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Sprawdzenie możliwości wprowadzenia znak&oacute;w specjalnych do nazwy kolumn.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik dodaje nową kolumne poprzez wybranie przycisku &quot;add new column&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wyświetla się komunikat o treści &quot;wpisz nazwę kolumny&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Użytkownik podaje w nazwie znaki &quot;ą, ę, ż, ś, ć, ź, dź, A, B, %, *, #, Ś, Ż&quot; oraz klika &quot;ok&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Kolumna się dodaje zawierając poprawnie wskazaną nazwę.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="40014" name="Kolumny o takich samych nazwach.">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[22]]></externalid>
+	<fullexternalid><![CDATA[JP-3-22]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Sprawdzenie, czy istnieje możliwość dodania drugiej kolumny o takie samej nazwie.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik klika na przycisk &quot;add new column&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Rozpoczyna się proces dodawania nowej kolumny poprzez wyświetlenie komunikatu o treści &quot;Wpisz nazwę kolumny&quot;.</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Użytkownik wpisuje nazwę nowej kolumny &quot;Nowa Kolumna&quot; i klika &quot;ok&quot;.</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Dodaje się nowa kolumna z wpisaną wcześniej nazwą. Kolumna jest widoczna jako ostatnia po prawej stronie.</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Użytkownik klika na przycisk &quot;add new column&quot;.</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<table>
+	<tbody>
+		<tr>
+			<td>
+			<p>&nbsp;</p>
+			</td>
+			<td>
+			<p>Rozpoczyna się proces dodawania nowej kolumny poprzez wyświetlenie komunikatu o treści &quot;Wpisz nazwę kolumny&quot;.</p>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<table>
+	<tbody>
+		<tr>
+			<td style="text-align:left">&nbsp;</td>
+			<td>
+			<p>Użytkownik wpisuje nazwę nowej kolumny &quot;Nowa Kolumna&quot; i klika &quot;ok&quot;.</p>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+]]></actions>
+	<expectedresults><![CDATA[<p>Dodaje się nowa kolumna z wpisaną&nbsp; nazwą. Kolumna jest widoczna jako ostatnia po prawej stronie.</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="40026" name="Edycja treści w nazwie kolumny.">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[24]]></externalid>
+	<fullexternalid><![CDATA[JP-3-24]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Sprawdzenie czy istnieje możliwość edytcji nazwy kolumny.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik najedża wskaźnikiem myszy na nazwę kolumny &quot;to do&quot; i pr&oacute;buje edytować nazwę poprzez kliknięcie na tę nazwę.</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Brak możliwości edycji nazwy kolumny.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="40033" name="Usuwanie kolumn - potwierdzenie. ">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[26]]></externalid>
+	<fullexternalid><![CDATA[JP-3-26]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Przetestowanie opcji usunięcia kolumny, bez jej finalnego usunięcia (działania użytkownika jako omyłkowo kliknięcia przycisku &quot;x&quot;).</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik najeżdża wskaźnikiem myszy na kolumnę &quot;done&quot; i klika przycisk usunięcia kolumny &quot;x&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wyświetla się komunikat o treści &quot;czy na pewno chcesz usunąć wybraną kolumnę?&quot; wraz z&nbsp; przyciskami &quot;tak&quot; i &quot;nie&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Użytkownik wybiera opcję &quot;nie&quot; w celu anulowania procesu usunięcia kolumny.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Komunikat o usunięciu kolumny znika. Kolumna nie zostaje usunięta.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="40062" name="Ograniczenie liczby zadań w kolumnie &quot;doing&quot;.">
+	<node_order><![CDATA[11]]></node_order>
+	<externalid><![CDATA[32]]></externalid>
+	<fullexternalid><![CDATA[JP-3-32]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Weryfikacja poprawności działania kolumny &quot;doing&quot; z domyślnymi ustawieniami w zakresie możliwości dodania większej liczby zadań niż 3.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>W kolumnie &quot;doing&quot; widnieją 3 zadania.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W kolumnie &quot;doing&quot; użytkownik chcąc dodać kolejne zadanie klika myszą przycisk &quot;add new task&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Pojawia sie komunikat o treści &quot;w kolumnie znajdują sie obecnie 3 zadania, czy na pewno chcesz dodać kolejne?&quot; oraz opcje &quot;tak&quot; i &quot;nie&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Użytkownik wybiera opcje &quot;nie&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Zadanie nie zostaje dodane do listy. Komunikat autmatycznie znika.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Użytkownik chce przenieść zadanie z kolumny &quot;to do&quot; do kolumny &quot;doing&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Pojawia sie komunikat o treści &quot;w kolumnie znajdują się obecnie 3 zadania, czy na pewno chcesz dodać kolejne?&quot; oraz opcje &quot;tak&quot; i &quot;nie&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Użytkownik wybiera opcję &quot;tak&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Zadanie zostaje przeniesione do kolumny &quot;doing&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="39604" name="Działania na zadaniach." >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="40045" name="Usuwanie zadań - negacja.">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[29]]></externalid>
+	<fullexternalid><![CDATA[JP-3-29]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Przetestowanie możliwości omyłkowo wybranej opcji usunięcia zadania przez użytkownika.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+
+<p>Aplikacja posida kilka dodanych zadań w kolumnach.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik najeżdża wskaźnikiem myszy na zadanie &quot;add task&quot; i klika przycisk usunięcia zadania &quot;x&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wyświetla się komunikat o treści &quot;czy na pewno chcesz usunąć wybrane zadanie?&quot; wraz z&nbsp; przyciskami &quot;tak&quot; i &quot;nie&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Użytkownik wybiera opcję &quot;nie&quot; w celu anulowania procesu usunięcia zadania.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Komunikat o usunięciu zadania znika. Zadanie nie zostaje usunięta.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="40037" name="Usuwanie zadań - potwierdzenie. ">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[27]]></externalid>
+	<fullexternalid><![CDATA[JP-3-27]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Sprawdzenie czy istnieje możliwość usunięcia zadania.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+
+<p>Aplikacja posida kilka dodanych kolumn z treściami zadań.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik najeżdża wskaźnikiem myszy na zadanie &quot;new task&quot; i pr&oacute;buje je usunąć poprzez kliknięcie myszą na przycisk &quot;x&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wyświetla się komunikat o treści &quot;czy na pewno chcesz usunąć wybrane zadanie?&quot; wraz z przyciskami &quot;tak&quot; i &quot;nie&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Użytkownik potwierdza chęć usunięcia zadania poprzez wybranie przycisku &quot;tak&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Zadanie zostaje usuniętę.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="40029" name="Edycja treści zadania.">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[25]]></externalid>
+	<fullexternalid><![CDATA[JP-3-25]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p><br />
+Sprawdzenie czy istnieje możliwość edycji treści zadania.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+
+<p>Aplikacja zawiera kilka kolumn z wypełnionymi treścią zadaniami.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik najedża wskaźnikiem myszy na zadanie &quot;new task&quot; i pr&oacute;buje edytować nazwę poprzez kliknięcie na pole z zadaniem.</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Brak możliwości edycji treści zadania.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="40020" name="Zadania o takich samych nazwach.">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[23]]></externalid>
+	<fullexternalid><![CDATA[JP-3-23]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Sprawdzenie, czy istnieje możliwość dodania drugiego zadania o takie samej treści.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik klika na przycisk &quot;add task&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Rozpoczyna się proces dodawania nowego zadania poprzez wyświetlenie komunikatu o treści &quot;Wpisz nazwę karty&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Użytkownik wpisuje nazwę nowego zadania &quot;Nowe zadanie&quot; i klika &quot;ok&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Dodaje się nowe zadanie z wpisaną wcześniej nazwą. Zadanie jest widoczne w pozycji pionowej jako ostatnie dodane zadanie w wybranej kolumnie.</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Użytkownik klika na przycisk &quot;add task&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<table>
+	<tbody>
+		<tr>
+			<td>
+			<p>&nbsp;</p>
+			</td>
+			<td>
+			<p>Rozpoczyna się proces dodawania nowego zadania poprzez wyświetlenie komunikatu o treści &quot;Wpisz nazwę karty&quot;.</p>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Użytkownik wpisuje nazwę nowego zadania &quot;Nowe zadanie&quot; i klika &quot;ok&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Dodaje się nowe zadanie z wpisaną wcześniej nazwą. Zadanie jest widoczne w pozycji pionowej jako ostatnie dodane zadanie w wybranej kolumnie.</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="39833" name="Wprowadzenie znaków specjalnych w treści zadania.">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[21]]></externalid>
+	<fullexternalid><![CDATA[JP-3-21]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Sprawdzenie możliwości wprowadzenia znak&oacute;w specjalnych do treści zadania.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik dodaje zadanie poprzez wybranie przycisku &quot;add task&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wyświetla się komunikat o treści &quot;wpisz nazwę karty&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Użytkownik podaje w nazwie znaki &quot;ą, ę, ż, ś, ć, ź, dź, A, B, %, *, #, Ś, Ż&quot; oraz klika &quot;ok&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Zadanie dodaje się poprawnie zawierając wskazaną nazwę.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="39816" name="Weryfikacja ograniczeń w ilości dodanych znaków w zadaniu.">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[19]]></externalid>
+	<fullexternalid><![CDATA[JP-3-19]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Sprawdzenie czy podczas dodawania zadania, jest ustawiony limit na ilość znak&oacute;w w nazwie.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik dodaje zadanie poprzez przycisk &quot;add task&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Wyświetlony zostaje komunikat o treści: &quot;wpisz nazwę karty&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Użytkownik wpisuje w nazwie ciąg znak&oacute;w &quot;lorem ipsum&quot; i klika &quot;ok&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Nie wystąpił limit znak&oacute;w w wprowadzonej nazwie. Treść zadania dodała sie poprawnie.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="39789" name="Weryfikacja ograniczeń  w dodawaniu zadań w kolumnach.">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[17]]></externalid>
+	<fullexternalid><![CDATA[JP-3-17]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Sprawdzenie czy w aplikacji został ustanowiony limit na dodawnie zadań w wybranych losowo kolumnach.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik w kolumnie &quot;do to&quot; dodaje poprzez wyb&oacute;r przycisku &quot;add task&quot; oraz &quot;ok&quot; 64 zadania.&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Zadania dodają się poprawnie. Zadania są umieszczane w widoku pionowym, &quot;jedno pod drugim&quot;. Ostatnie dodane zadanie jest dodawne na ostatniej pozycji.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="39675" name="Dodanie nowego zadania bez nazwy.">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[13]]></externalid>
+	<fullexternalid><![CDATA[JP-3-13]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Sprawdzenie możliwości dodania nowego zadania bez wpisania jego nazwy.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik klika w dostępną opcję &ldquo;add task&rdquo;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Rozpoczyna się proces dodawania nowego zadaniapoprzez wyświetlenie komunikatu o treści &quot;Wpisz nazwę karty&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Użytkownik nie wpisuje nazwy nowego zadania i klika &quot;ok&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Dodaje się nowe zadanie bez nazwy (z pustym polem). Nowe zadanie jest widoczne w wybranej kolumnie.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="39605" name="Dodanie nowego zadania w kolumnie.">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<fullexternalid><![CDATA[JP-3-6]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Sprawdzenie możliwości dodania zadania do wybranej kolumny.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik klika w dostępną opcję &ldquo;add task&rdquo;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Rozpoczyna się proces dodawania nowego zadania poprzez wyświetlenie komunikatu o treści &quot;Wpisz nazwę karty&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Użytkownik wpisuje nazwę nowego zadania i klika &quot;ok&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Dodaje się nowe zadanie z wpisaną wcześniej nazwą. Zadanie jest widoczne w wybranej kolumnie. Zadanie wyświetla się w pozycji pionowej pod wcześniej widniejącym zadaniem (&quot;jedno pod drugim&quot;) - jeśli takie już istniało.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="39623" name="Anulowanie dodawnia nowego zadania w kolumnie.">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[9]]></externalid>
+	<fullexternalid><![CDATA[JP-3-9]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Sprawdzenie możliwości anulowania dodawania nowego zadania w wybranej kolumnie.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik klika w dostępną opcję &ldquo;add task&rdquo; w wybranej kolumnie.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Rozpoczyna się proces dodawania nowego zadania poprzez wyświetlenie komunikatu o treści &quot;Wpisz nazwę karty&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Użytkownik nie wpisuje nazwy nowej karty i klika przycisk &quot;anuluj&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Komunikat informujący o rozpoczęciu procesu dodawania nowego zadania znika autmatycznie i nowe zadanie się nie dodaje.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="39709" name="Przenoszenie zadań między kolumnami.">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[14]]></externalid>
+	<fullexternalid><![CDATA[JP-3-14]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Sprawdzenie poprawności działania funkcjonalności &quot;drag&amp;drop&quot; w zakresie przenoszenia zadań między kolumnami.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>W losowo wybranych kolumnach dodane zostały zadania.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>W wybranej kolumnie użytkownik klika na wybrane zadanie, przeciąga zadanie do innej kolumny a następnie je tam &quot;upuszcza&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Zadanie zostało poprawnie przeniesione.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="40068" name="Zamiana miejsc zadań w kolumnach.">
+	<node_order><![CDATA[11]]></node_order>
+	<externalid><![CDATA[33]]></externalid>
+	<fullexternalid><![CDATA[JP-3-33]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Sprawdzenie czy można przenosić zadania w dowolne miejsce w kolumnie.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>W kolumnach widnieje po kilka utworzonych zadań.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik najeżdża wskaźnikiem myszy na wybrane zadanie w danej kolumnie i je &quot;podnosi&quot; za pomocą klinięcia.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Zadanie się &quot;podnosi&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Użytkownik &quot;przeciąga&quot; zadanie na innej miejsce w tej samej kolumnie i je &quot;upuszcza&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Zadanie zostaje umieszczone w wybranym miejscu, reszta zadań dostosowuje swoje położenie względem zmiany.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Użytkownik najeżdża wskaźnikiem myszy na wybrane zadanie w kolumnie nr 1 i je &quot;podnosi&quot; za pomocą kliknięcia.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Zadanie się &quot;podnosi&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Użytkownik &quot;przeciąga&quot; zadanie do kolumny nr 2 i je &quot;upuszcza&quot; w wybranym miejscu.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Zadanie zostaje umieszczone w wybranym miejscu, reszta zadań w kolumnach dostosowuje swoje połozenie względem zmiany.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite>
+<testcase internalid="40049" name="Przystosowanie workflow do użytkownika.">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[30]]></externalid>
+	<fullexternalid><![CDATA[JP-3-30]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Sprawdzenie zachowania aplikacji po zmianie ustawień domyślnych.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik klika na przycisk &quot;add new column&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Pojawia się komunikat z prośbą o treści &quot;wpisz nazwę kolumny&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Użytkownik wpisuję nazwę &quot;wysoki priorytet&quot; i klika przycisk &quot;ok&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Dodaje się nową kolumna z wpisaną nazwą. Kolumna jest widoczna po prawej stronie, jako ostatnia w rzędzie.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Użytkownik odświeża stronę.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Strona po odświeżeniu nie resetuje ustawień. Widoczne są wszytskie zmiany użytkownika.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Użytkownik w kolumnie &quot;to do&quot; klika na przycisk dodania nowego zadania &quot;add task&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Pojawia się komunikat o treści &quot;wpisz nazwę karty&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Użytkownik wisuje treść zadania: &quot;wysłanie poprawek&quot; i klika przycisk &quot;ok&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Dodaje sie nowe zadanie z wpisaną treścią w kolumnie &quot;to do&quot;. Zadanie jest widoczne jako ostatnie dodane w pozycji pionowej w kolumnie.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Użytkownik odświeża stronę.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Strona po odświeżeniu nie resetuje ustawień. Widoczne są wszytsie zmiany użytkownika.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="40057" name="Dodanie nowych opcji do tablicy.">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[31]]></externalid>
+	<fullexternalid><![CDATA[JP-3-31]]></fullexternalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Rozważenie dodania nowych modyfikacji w tablicy, a kt&oacute;rych nie ma w dokumentacji.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Użytkownik znajduje się na stronie aplikacji http://kanbanboard.pl/.</p>
+
+<p>Aplikacja nie wymaga zalogowania ani rejestracji.</p>
+
+<p>Użytkownik potrzebuje opcji dodania nowej tablicy.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Użytkownik dodaje nową talicę poprzez klinięcie na przycisk &quot;add new board&quot;.</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Dodaje się nowa tablica z domyśnymi ustawieniami. Użytkownik zostaje przeniesiony do nowej tablicy.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Użytkownik zmienia nazwę nowej tablicy z domyslnej &quot;Kanban Board 2&quot; na nazwę &quot;Nowy projekt&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Tablica zmienia nazwę.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Użytkownik za pomocą listy rozwijanej chce przełączyć się do pierwszej tablicy.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Użytkownik zostaje przeniesiony do pierwszej tablicy.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite></testsuite>
